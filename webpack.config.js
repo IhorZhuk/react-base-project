@@ -3,6 +3,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src");
+var TEST_DIR = path.resolve(__dirname, "test");
 
 var config = {
   entry: SRC_DIR + "/app/index.js",
@@ -15,7 +16,8 @@ var config = {
     alias: {
       Components: SRC_DIR + '/app/components',
       Reducers: SRC_DIR + '/app/reducers',
-      Controllers: SRC_DIR + '/app/controllers'
+      Controllers: SRC_DIR + '/app/controllers',
+      Test: TEST_DIR 
     },
     extensions: ['.js', '.jsx'] 
   },
