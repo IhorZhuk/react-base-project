@@ -1,14 +1,24 @@
 const initState = {
-  message: 'Init mesage'
+  data: {},
+  isLoading: false
 }
 
 const MainReducer = (state = initState, action) => {
   switch(action.type) {
-    case 'MAIN':
+
+    case 'FETCHED':
       return {
         ...state,
-        message: action.message
+        isLoading: false,
+        name: action.name
       }
+
+    case 'FETCHING':
+      return {
+        ...state.date,
+        isLoading: true
+      }
+
     default:
       return state
   }

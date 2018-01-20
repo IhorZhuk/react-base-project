@@ -12,14 +12,14 @@ import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-ro
 
 import App from 'Components/app';
 
-import MainReducer from 'Reducers/main';
+import NamesReducer from 'Reducers/names';
 import SecondReducer from 'Reducers/second';
 
 const history = createHistory();
 const middleware = routerMiddleware(history);
 
 const reducer = combineReducers({
-  main: MainReducer,
+  names: NamesReducer,
   second: SecondReducer,
   router: routerReducer
 });
