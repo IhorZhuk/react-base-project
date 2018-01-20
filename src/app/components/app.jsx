@@ -1,10 +1,13 @@
 import React from "react";
-import {Home} from 'Components/home';
+import Home from 'Components/home';
 import {About} from 'Components/about';
 import { Switch, Route, Link } from 'react-router-dom';
 
-export class App extends React.Component {
+export default class App extends React.Component {
+ 
+
   render() {
+    console.log(store)
     return (
       <div>
         <ul>
@@ -20,7 +23,6 @@ export class App extends React.Component {
           <Route exact path='/' component={Home}/>
           <Route path='/about' component={About}/>
         </Switch>
-
       </div>
     )
   }

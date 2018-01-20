@@ -13,7 +13,8 @@ var config = {
   },
   resolve: {
     alias: {
-      Components: SRC_DIR + '/app/components'
+      Components: SRC_DIR + '/app/components',
+      Reducers: SRC_DIR + '/app/reducers'
     },
     extensions: ['.js', '.jsx'] 
   },
