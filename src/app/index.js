@@ -1,15 +1,12 @@
 const css = require('./scss/app.scss');
 
 import React from 'react';
-import {render} from 'react-dom';
-import {Sample} from 'sample'
+import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
+import {App} from 'Components/app';
 
-class App extends React.Component {
-  render() {
-    return(
-      <div><Sample/></div>
-    )
-  }
-}
-
-render(<App/>, document.getElementById('app'))
+ReactDOM.render((
+  <HashRouter>
+    <App />
+  </HashRouter>
+), document.getElementById('app'))
