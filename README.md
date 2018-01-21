@@ -1,0 +1,1 @@
+Install jest globaly: `npm install -g jest`.
