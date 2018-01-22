@@ -17,6 +17,7 @@ var config = {
       Components: SRC_DIR + '/app/components',
       Reducers: SRC_DIR + '/app/reducers',
       Controllers: SRC_DIR + '/app/controllers',
+      Pages: SRC_DIR + '/app/pages',
       Test: TEST_DIR 
     },
     extensions: ['.js', '.jsx'] 

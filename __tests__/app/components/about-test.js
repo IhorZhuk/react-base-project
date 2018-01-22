@@ -1,8 +1,10 @@
 jest.dontMock('../../../src/app/components/about.jsx');
+jest.dontMock('../../../src/app/controlers/nameDays.js');
 
 import React from 'react';
 import TestUtils from 'react-dom/test-utils';
 import About from '../../../src/app/components/about.jsx';
+import namesAPI from '../../../src/app/controlers/nameDays.js';
 
    
 describe('components/about', () => {

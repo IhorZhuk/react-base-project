@@ -5,7 +5,9 @@ import namesAPI from 'Controllers/nameDays';
 class Home extends React.Component {
 
   componentWillMount() {
-    namesAPI.getCurrent()
+    if(typeof this.props.name  == 'undefined') {
+      namesAPI.getCurrent()
+    }
   }
 
   renderData() {
