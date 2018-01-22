@@ -1,3 +1,14 @@
 {
-  "presets": ["es2015", "react"]
+  "presets": ["es2015", "react"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "Controllers": "./src/app/controllers",
+        "Components": "./src/app/components",
+        "Reducers": "./src/app/reducers",
+        "Pages": "./src/app/pages"
+      }
+    }]
+  ]
 }
