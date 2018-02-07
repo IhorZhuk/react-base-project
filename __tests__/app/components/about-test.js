@@ -1,8 +1,8 @@
-jest.dontMock('Components/about.jsx');
+jest.dontMock('Components/about');
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import {About} from 'Components/about.jsx';
+import {About} from 'Components/about';
 
    
 describe('Components/about', () => {
